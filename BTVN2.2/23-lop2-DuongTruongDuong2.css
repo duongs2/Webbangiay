@@ -1,0 +1,37 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    background-image: url(https://blog.hamtruyentranh.com/wp-content/uploads/2019/01/53117853_p0.jpg);
+}
+
+.all {
+    background-image: url(https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/5/16/805794/Chu-Cho-Meme.jpg);
+    height: 400px;
+    width: 800px;
+    border: 3px solid red;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(140, 0, 255);
+}
+
+.boxx {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(219, 221, 211);
+    padding: 80px;
+}
+
+.box {
+    background-color: red;
+    padding: 15px;
+    border-radius: 15px;
+}

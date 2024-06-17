@@ -1,0 +1,53 @@
+﻿
+@{
+    ViewBag.Title = "DanhSachSanPhamGiamGia";
+}
+
+@model List<sanpham>
+
+<h2>Danh sách sản phẩm có giá tiền lớn hơn 100</h2>
+<table>
+    <tr>
+        <th>Mã sản phẩm</th>
+        <th>Tên sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Giá tiền</th>
+        <th>Giảm giá</th>
+    </tr>
+    @foreach (var sanpham in Model)
+    {
+        <tr>
+            <td>@sanpham.masp</td>
+            <td>@sanpham.tensanpham</td>
+            <td>@sanpham.soluong</td>
+            <td>@sanpham.giatien</td>
+            <td>@sanpham.giamgia</td>
+        </tr>
+    }
+</table>
+Tạo view DanhSachSanPhamGiamGia.cshtml:
+html
+Copy code
+@model List<sanpham>
+
+<h2>Danh sách sản phẩm có giảm giá</h2>
+<table>
+    <tr>
+        <th>Mã sản phẩm</th>
+        <th>Tên sản phẩm</th>
+        <th>Số lượng</th>
+        <th>Giá tiền</th>
+        <th>Giảm giá</th>
+    </tr>
+    @foreach (var sanpham in Model)
+    {
+        <tr>
+            <td>@sanpham.masp</td>
+            <td>@sanpham.tensanpham</td>
+            <td>@sanpham.soluong</td>
+            <td>@sanpham.giatien</td>
+            <td>@sanpham.giamgia</td>
+        </tr>
+    }
+</table>
+

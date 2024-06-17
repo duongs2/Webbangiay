@@ -1,0 +1,237 @@
+    body {
+        margin: 0px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+    
+    .header {
+        display: flex;
+        list-style-type: none;
+        margin-left: 20px;
+        padding-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .header-home {
+        margin-right: 5px;
+        padding: 10px;
+    }
+    
+    .header-about {
+        margin-right: 5px;
+        padding: 10px;
+        margin-left: 5px;
+    }
+    
+    .header-foods {
+        margin-left: 5px;
+        padding: 10px;
+        margin-right: 5px;
+    }
+    
+    .header-more {
+        margin-left: 5px;
+        padding: 10px;
+        margin-right: 10px;
+    }
+    
+    .menu2 {
+        list-style-type: none;
+        width: 110px;
+        height: 85px;
+        position: absolute;
+        display: none;
+        left: 220px;
+        padding-left: 0px;
+        background: white;
+        top: 39px;
+    }
+    
+    .menu2-1 {
+        padding-left: 10px;
+        padding-bottom: 5px;
+        padding-top: 5px;
+    }
+    
+    .menu2-2 {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    
+    .menu2-3 {
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-left: 10px;
+    }
+    
+    .header-more:hover .menu2 {
+        display: block;
+    }
+    
+    .header li:hover {
+        background: rgb(133, 120, 120);
+    }
+    
+    .header-search {
+        position: absolute;
+        right: 20px;
+        margin-top: 10px;
+    }
+    
+    .content {
+        background: rgb(243, 239, 239);
+    }
+    
+    .one-piece {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+    }
+    
+    .one-piece-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .one-piece-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+    .one-piece-text-1 {
+        font-size: 30px;
+        font-weight: bold;
+        color: #4e8df5;
+    }
+    
+    .one-piece-text-2 {
+        color: #ff0000;
+    }
+    
+    .one-piece-text-member {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ff0000;
+    }
+    
+    .img {
+        margin: 0px;
+        width: 200px;
+        height: 200px;
+    }
+    
+    .one-piece-img-member-1 {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+    
+    .one-piece-img-member-2 {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 125px;
+        margin-right: 125px;
+    }
+    
+    .member {
+        display: flex;
+        justify-content: space-around;
+        font-size: 20px;
+        font-weight: bold;
+        color: #ff0000;
+    }
+    
+    .page_redirect {
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        margin-left: 500px;
+        margin-right: 500px;
+    }
+    
+    .page:hover {
+        background: orange;
+    }
+    
+    .page {
+        border: solid 1px rgb(105, 104, 104);
+        line-height: 40px;
+        width: 40px;
+        border-radius: 150px;
+        cursor: pointer;
+    }
+    
+    .footer {
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+    .overview {
+        list-style-type: none;
+        padding-left: 0px;
+        margin-top: -10px;
+    }
+    
+    .community {
+        list-style-type: none;
+        margin-top: -10px;
+        padding-left: 0px;
+    }
+    
+    .advertise {
+        list-style-type: none;
+        margin-top: -10px;
+        padding-left: 0px;
+    }
+    
+    .box {
+        width: 1000px;
+        border: solid 1px orange;
+        height: 5px;
+        background-color: orange;
+        border-radius: 15px;
+    }
+    
+    .one-piece-member4 {
+        margin-left: 150px;
+        margin-right: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box-2 {
+        width: 1000px;
+        border: solid 1px orange;
+        height: 5px;
+        background-color: orange;
+        border-radius: 15px;
+    }
+    
+    .advertise {
+        text-align: left;
+    }
+    
+    .community {
+        text-align: left;
+    }
+    
+    .overview {
+        text-align: left;
+    }

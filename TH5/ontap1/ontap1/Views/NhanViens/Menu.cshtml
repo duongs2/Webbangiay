@@ -1,0 +1,7 @@
+﻿
+@model IEnumerable<ontap1.Models.Phong>
+@foreach (var item in Model)
+{
+    var url = "/NhanVienTheoPhong/" + item.Maphong;
+    <a class="nav-link" href="@url"> @item.Tenphong </a> <label>&nbsp;| &nbsp;</label>
+}

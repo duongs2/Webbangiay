@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ontapkt", "ontapkt\ontapkt.csproj", "{9B30D1E4-4572-44C5-A129-B406F8348264}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B30D1E4-4572-44C5-A129-B406F8348264}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B30D1E4-4572-44C5-A129-B406F8348264}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B30D1E4-4572-44C5-A129-B406F8348264}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B30D1E4-4572-44C5-A129-B406F8348264}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {87C28F1A-7308-4C33-A599-97CA5CAE0F3F}
+	EndGlobalSection
+EndGlobal

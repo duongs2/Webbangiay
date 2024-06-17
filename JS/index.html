@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <form action="Google.html">
+            <h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+            <div>
+                <span class="A">Họ và tên</span>
+                <input type="text" placeholder="Nhập họ và tên" id="ten" pattern="[^/d]{0,}" title="không chứa chữ số" required>
+            </div>
+            <div>
+                <span class="A">Mật khẩu</span>
+                <input type="text" id="mk1" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\W)(?=.*[0-9]).{8,}" required>
+            </div>
+            <div>
+                <span class="A">Khẳng định mật khẩu</span>
+                <input type="password" id="mk2" required>
+            </div>
+            <div>
+                <span class="A">Ngày tháng năm sinh</span>
+                <input type="date" id="ngay" required>
+            </div>
+            <div>
+                <span class="A">Số điện thoại</span>
+                <input type="text" id="sdt" pattern="([0-9]).{10}" required>
+            </div>
+            <div>
+                <span class="A">Sở thích</span>
+                <input type="text" id="st" required>
+            </div>
+            <div>
+                <span>Đường dẫn ảnh</span>
+                <input type="file" id="anh">
+            </div>
+            <div class="B">
+                <button type="submit" onclick="dki()">Đăng kí</button>
+                <button type="reset">Hủy bỏ</button>
+            </div>
+
+        </form>
+    </div>
+    <script>
+        function dki() {
+            if (document.getElementById('mk1').value != document.getElementById('mk2').value) {
+                alert("mật khẩu không trùng khớp !");
+            }
+        }
+    </script>
+</body>
+
+</html>

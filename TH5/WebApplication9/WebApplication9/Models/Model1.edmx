@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="QLSanphamModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Danhmuc">
+          <Key>
+            <PropertyRef Name="MaDanhmuc" />
+          </Key>
+          <Property Name="MaDanhmuc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TenDanhmuc" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Mota" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Sanpham">
+          <Key>
+            <PropertyRef Name="Mavd" />
+          </Key>
+          <Property Name="Mavd" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Tenvd" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Mota" Type="nvarchar" MaxLength="250" />
+          <Property Name="TenAnh" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Giatien" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Soluong" Type="int" />
+          <Property Name="MaDanhmuc" Type="int" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Sanpham__MaDanhm__4BAC3F29">
+          <End Role="Danhmuc" Type="Self.Danhmuc" Multiplicity="1" />
+          <End Role="Sanpham" Type="Self.Sanpham" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Danhmuc">
+              <PropertyRef Name="MaDanhmuc" />
+            </Principal>
+            <Dependent Role="Sanpham">
+              <PropertyRef Name="MaDanhmuc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLSanphamModelStoreContainer">
+          <EntitySet Name="Danhmuc" EntityType="Self.Danhmuc" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sanpham" EntityType="Self.Sanpham" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Sanpham__MaDanhm__4BAC3F29" Association="Self.FK__Sanpham__MaDanhm__4BAC3F29">
+            <End Role="Danhmuc" EntitySet="Danhmuc" />
+            <End Role="Sanpham" EntitySet="Sanpham" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="QLSanphamModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Danhmuc">
+          <Key>
+            <PropertyRef Name="MaDanhmuc" />
+          </Key>
+          <Property Name="MaDanhmuc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TenDanhmuc" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mota" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Sanphams" Relationship="Self.FK__Sanpham__MaDanhm__4BAC3F29" FromRole="Danhmuc" ToRole="Sanpham" />
+        </EntityType>
+        <EntityType Name="Sanpham">
+          <Key>
+            <PropertyRef Name="Mavd" />
+          </Key>
+          <Property Name="Mavd" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Tenvd" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Mota" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+          <Property Name="TenAnh" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Giatien" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+          <Property Name="Soluong" Type="Int32" />
+          <Property Name="MaDanhmuc" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Danhmuc" Relationship="Self.FK__Sanpham__MaDanhm__4BAC3F29" FromRole="Sanpham" ToRole="Danhmuc" />
+        </EntityType>
+        <Association Name="FK__Sanpham__MaDanhm__4BAC3F29">
+          <End Role="Danhmuc" Type="Self.Danhmuc" Multiplicity="1" />
+          <End Role="Sanpham" Type="Self.Sanpham" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Danhmuc">
+              <PropertyRef Name="MaDanhmuc" />
+            </Principal>
+            <Dependent Role="Sanpham">
+              <PropertyRef Name="MaDanhmuc" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="QLSanphamEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Danhmucs" EntityType="Self.Danhmuc" />
+          <EntitySet Name="Sanphams" EntityType="Self.Sanpham" />
+          <AssociationSet Name="FK__Sanpham__MaDanhm__4BAC3F29" Association="Self.FK__Sanpham__MaDanhm__4BAC3F29">
+            <End Role="Danhmuc" EntitySet="Danhmucs" />
+            <End Role="Sanpham" EntitySet="Sanphams" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="QLSanphamModelStoreContainer" CdmEntityContainer="QLSanphamEntities">
+          <EntitySetMapping Name="Danhmucs">
+            <EntityTypeMapping TypeName="QLSanphamModel.Danhmuc">
+              <MappingFragment StoreEntitySet="Danhmuc">
+                <ScalarProperty Name="MaDanhmuc" ColumnName="MaDanhmuc" />
+                <ScalarProperty Name="TenDanhmuc" ColumnName="TenDanhmuc" />
+                <ScalarProperty Name="Mota" ColumnName="Mota" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sanphams">
+            <EntityTypeMapping TypeName="QLSanphamModel.Sanpham">
+              <MappingFragment StoreEntitySet="Sanpham">
+                <ScalarProperty Name="Mavd" ColumnName="Mavd" />
+                <ScalarProperty Name="Tenvd" ColumnName="Tenvd" />
+                <ScalarProperty Name="Mota" ColumnName="Mota" />
+                <ScalarProperty Name="TenAnh" ColumnName="TenAnh" />
+                <ScalarProperty Name="Giatien" ColumnName="Giatien" />
+                <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+                <ScalarProperty Name="MaDanhmuc" ColumnName="MaDanhmuc" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

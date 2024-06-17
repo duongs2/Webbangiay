@@ -1,0 +1,38 @@
+.box {
+    background-color: darkblue;
+    position: absolute;
+    left: 50%;
+    text-align: center;
+    color: darkgray;
+}
+
+.p {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.d3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.box1 {
+    position: absolute;
+    left: 50%;
+}
+
+.box2 {
+    background-color: darkgreen;
+    width: 100px;
+    float: left;
+    text-align: center;
+}
+
+.box3 {
+    background-color: darkmagenta;
+    width: 100px;
+    float: left;
+    text-align: center;
+    padding-left: 20px;
+}

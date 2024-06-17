@@ -1,0 +1,2 @@
+D:\Study\T4\TH5\API\API\obj\Debug\API.csproj.AssemblyReference.cache
+D:\Study\T4\TH5\API\API\obj\Debug\API.csproj.CoreCompileInputs.cache

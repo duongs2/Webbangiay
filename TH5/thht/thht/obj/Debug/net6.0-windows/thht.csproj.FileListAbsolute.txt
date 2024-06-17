@@ -1,0 +1,8 @@
+D:\Study\T4\TH5\thht\thht\obj\Debug\net6.0-windows\thht.csproj.AssemblyReference.cache
+D:\Study\T4\TH5\thht\thht\obj\Debug\net6.0-windows\thht.Form1.resources
+D:\Study\T4\TH5\thht\thht\obj\Debug\net6.0-windows\thht.Properties.Resources.resources
+D:\Study\T4\TH5\thht\thht\obj\Debug\net6.0-windows\thht.csproj.GenerateResource.cache
+D:\Study\T4\TH5\thht\thht\obj\Debug\net6.0-windows\thht.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\T4\TH5\thht\thht\obj\Debug\net6.0-windows\thht.AssemblyInfoInputs.cache
+D:\Study\T4\TH5\thht\thht\obj\Debug\net6.0-windows\thht.AssemblyInfo.cs
+D:\Study\T4\TH5\thht\thht\obj\Debug\net6.0-windows\thht.csproj.CoreCompileInputs.cache

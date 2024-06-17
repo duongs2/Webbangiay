@@ -1,0 +1,5 @@
+﻿  ConsoleApplication1.cpp
+D:\Study\T4\TH5\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(61,10): error C2039: 'sort': is not a member of 'std'
+C:\Program Files\Microsoft Visual Studio\2022\Professional\VC\Tools\MSVC\14.36.32532\include\iostream(19,1): message : see declaration of 'std'
+D:\Study\T4\TH5\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(61,14): error C3861: 'sort': identifier not found
+D:\Study\T4\TH5\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(76,23): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data

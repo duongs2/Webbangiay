@@ -1,0 +1,85 @@
+body {
+    background-color: rgb(97, 79, 197);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.all {
+    background-image: url(https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2020/5/16/805794/Chu-Cho-Meme.jpg);
+    height: 400px;
+    width: 800px;
+    border: 3px solid red;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(38, 0, 255);
+}
+
+.test {
+    display: flex;
+    font-size: 50px;
+    margin: auto;
+    width: 50%;
+    justify-content: center;
+}
+
+.text1 {
+    margin: auto;
+    font-size: 30px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(208, 255, 0);
+}
+
+#box1 {
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.box2 {
+    background: red;
+    margin-top: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 80px;
+    height: 25px;
+    border-radius: 10px;
+}
+
+.test p:nth-child(1) {
+    color: #4285f4;
+}
+
+.test p:nth-child(2) {
+    color: #ea4335;
+}
+
+.test p:nth-child(3) {
+    color: rgb(206, 196, 53);
+}
+
+.test p:nth-child(4) {
+    color: #4285f4;
+}
+
+.test p:nth-child(5) {
+    color: #34a853;
+}
+
+.test p:nth-child(6) {
+    color: #ea4335;
+}

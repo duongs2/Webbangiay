@@ -1,0 +1,147 @@
+body {
+    background-color: rgb(38, 182, 187);
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(https://img.meta.com.vn/Data/image/2021/10/08/hinh-anh-one-piece-2.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 150px;
+    width: auto;
+    color: #ff0000;
+    border: solid 5px rgb(255, 123, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9, 30px 0 20px 30px #B0E0E6;
+}
+
+.text1 {
+    font-weight: bold;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.text2 {
+    padding-bottom: 30px;
+}
+
+.boder11 {
+    display: flex;
+    background-color: rgb(0 0 0);
+    color: #ff0000;
+    border-radius: 5px;
+}
+
+.boder12 {
+    background-color: rgb(0 0 0);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.boder-1 {
+    display: flex;
+    background-color: rgb(0 0 0);
+    justify-content: space-between;
+    border: solid 5px rgb(255, 123, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 20px #FF6347, 0 0 10px 50px #FFDAB9, 30px 0 20px 50px #B0E0E6;
+}
+
+.boder1 {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.boder2 {
+    color: #ff0000;
+    margin-right: 10px;
+}
+
+.boder-2 {
+    padding-left: 250px;
+    padding-right: 250px;
+}
+
+.text3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: #ff0000;
+}
+
+.boder21 {
+    display: flex;
+}
+
+.img1 {
+    margin: 50px;
+    width: 1100px;
+    height: 200px;
+    border: solid 5px #ff0000);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.text5 {
+    margin-top: 60px;
+}
+
+.text6 {
+    font-size: 40px;
+    font-style: oblique;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.img {
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    border: solid 5px rgb(255, 123, 0);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+}
+
+.img2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.img3 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.t {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.boder-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ff0000;
+}
+
+.J {
+    border: solid 5px rgb(255, 123, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px 4px #FF6347, 0 0 10px 30px #FFDAB9, 30px 0 20px 30px #B0E0E6;
+}
